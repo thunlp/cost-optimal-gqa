@@ -12,8 +12,19 @@
   <span style="font-family: monospace">chenyingfa1999@gmail.com, wuyutong_yuna@163.com</span> </br></br>
 </div>
 
-This repository contains the code and models used in the paper [Cost-Optimal Grouped-Query Attention for Long-Context Modeling](https://arxiv.org/abs/2503.09579).
+This repository contains the code and models used in the EMNLP 2025 paper [Cost-Optimal Grouped-Query Attention for Long-Context Modeling](https://arxiv.org/abs/2503.09579).
 
 ## How to Run the Code
 
 Please refer to the README.md file inside the `src` folder.
+
+## How to Cite
+
+```bibtex
+@inproceedings{chen2025cost-optimal-gqa,
+    title={Cost-Optimal Grouped-Query Attention for Long-Context Modeling}, 
+    author={Yingfa Chen and Yutong Wu and Chenyang Song and Zhen Leng Thai and Xingyu Shen and Xu Han and Zhiyuan Liu and Maosong Sun},
+    year={2025},
+    booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+}
+```
