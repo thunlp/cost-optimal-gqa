@@ -15,13 +15,21 @@ Run `pip install -r requirements.txt` to install the dependencies.
 
 Please download SlimPajama from: https://huggingface.co/datasets/AlppAI/SlimPajama-chunked
 
-This dataset is the same as the original data, but multiple files are merged for faster loading times.)
+This dataset is the same as the original data, but multiple files are merged for faster downloading and processing.
 
-### How to Add New Datasets
+### How to Use Other Datasets
 
 See the README file in `data/` for more details.
 
 ## How to Run?
+
+The easiest way is to simply run:
+
+```shell
+bash train.sh train_config=60m_8k model_config=gpt-4-512 data_path=/path/to/data
+```
+
+By default, this will train the smallest model (3M parameters on 60M tokens) in our scaling law experiments (the Step 2 of our method in the paper).
 
 ### Passing Arguments
 
