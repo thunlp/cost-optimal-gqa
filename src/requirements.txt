@@ -1,0 +1,13 @@
+numpy
+datasets
+tensorboardX
+swanlab
+torch
+typed-argument-parser
+accelerate
+transformers
+deepspeed
+einops
+cut_entropy_loss
+triton
+jsonlines

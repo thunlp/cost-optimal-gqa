@@ -4,7 +4,16 @@ This repository contains the code and models used in the pape [Cost-Optimal Grou
 
 ## How to Run the Code
 
-Execute the following. This will automatically use multiple GPUs is available. To replicate the numbers in the paper, please run the training experiments on machines with 8 NVIDIA A800-80GB GPUs.
+### Step 1: Setup
+
+First, setup the environment and download the pretraining dataset by following the README in the `src` folder.
+
+### Step 2: Train the Models
+
+In the `src` folder, execute the following. 
+
 ```shell
 bash train.sh
 ```
+
+This will automatically use multiple GPUs is available. To replicate the numbers in the paper, please run the training experiments on machines with 8 NVIDIA A800-80GB GPUs.
