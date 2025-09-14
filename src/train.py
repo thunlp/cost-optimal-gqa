@@ -21,23 +21,10 @@ def get_args() -> Args:
             print("Cannot use grad checkpoint and compile mode together, setting compile to 0.")
             args.compile = 0
 
-        if args.model_name in ['gated_deltanet', 'gated-deltanet']:
-            print("Gated DeltaNet does not support torch.compile, setting compile to 0...")
-            args.compile = 0
-
-        if args.model_name in ['rabbit']:
-            print("Rabbit does not support compilation, turning it off...")
-            args.compile = 0
-
-        if args.model_name in ['mamba2']:
-            print("Turning off compilation for Mamba2")
-            args.compile = 0
-
     return args
 
 
 def main():
-    # torch.set_float32_matmul_precision('high')  # wtf is this?
     torch.set_default_dtype(torch.bfloat16)
     args = get_args()
     load_train_config(args)

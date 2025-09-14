@@ -1,0 +1,14 @@
+{
+    "vocab_size": 50304,
+    "n_layer": 12,
+    "d_model": 1024,
+    "n_head": 16,
+    "n_kv_head": 16,
+    "dim_k": 64,
+    "dim_v": 64,
+    "att_q_norm": 0,
+    "att_k_norm": 0,
+    "use_rope": 1,
+    "ffn_is_gated": 1,
+    "ffn_act_fn": "silu"
+}
